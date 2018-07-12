@@ -21,13 +21,11 @@ function sendemail($to,$title,$content){
 	$mail->isSMTP();
 	//设置邮件服务器地址
 	$mail->Host=Config::get('mailarr.host');
-	//$mail->Host='smtp.163.com';
 	//C 获取配置文件信息
 	//设置邮件服务器的端口 默认的是25  如果需要谷歌邮箱的话 443 端口号
 	$mail->Port=25;
 	//设置发件人的邮箱地址
 	$mail->From=Config::get('mailarr.username');
-	//$mail->From='cbj15986235366@163.com';
 	// $mail->FromName='我';//
 	//设置SMTP是否需要密码验证
 	$mail->SMTPAuth=true;
